@@ -1,5 +1,8 @@
 import pygame as pg
 import numpy as np 
+from funcs import *
+import tensorflow as tf
+
 
 class App:
     
@@ -8,12 +11,11 @@ class App:
         self.screen = pg.display.set_mode(self.res, pg.SCALED)
         self.clock = pg.time.Clock()
         
-    
     def update(self):
         pass
     
     def draw(self):
-        pass
+        pg.display.flip()
     
     def run(self):
         while True:
